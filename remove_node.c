@@ -49,6 +49,7 @@ rm_cont_fn(node const *v) {
 }
 
 // remove all nodes from the list which the remove func returns true
+// follow Linus Torvalds' advice. by Thomas Guest
 void
 remove_node(node **head, remove_fn rm) {
     for (node **curr = head; *curr; ) {
